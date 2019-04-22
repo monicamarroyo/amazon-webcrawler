@@ -1,0 +1,5 @@
+1.Domains beyond Amazon,
+My solution can extend from just amazon by replacing the url and making a request to that Domain. The code where we gather data will change but making the request will remain the same.
+
+2.Products beyond just simple books
+I can replace the base/search url to any other type of amazon product list.

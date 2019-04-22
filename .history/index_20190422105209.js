@@ -117,10 +117,10 @@ getbookData = async ($, link, title, count) => {
   obj.arrayData.push({product})
 
 
-  let jsonString = JSON.stringify(obj, null,2).replace(/\\t/g, '').
+  let jsonString = JSON.stringify(obj, null,2)
+  fs.writeFileSync('./output.json',jsonString).replace(/\\t/g, '').
   replace(/\\n/g, '')
 
-  fs.writeFileSync('./output.json',jsonString)
    return await Promise.resolve("ok");
 };
 
